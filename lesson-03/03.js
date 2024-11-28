@@ -2,9 +2,9 @@
 
 function findLargest(a, b, c) {
     let max
-    if (a > b) {
+    if (a > b && a > c) {
         max = a
-    } else if (b > c) {
+    } else if (b > a && b > c) {
         max = b
     } else
         max = c
