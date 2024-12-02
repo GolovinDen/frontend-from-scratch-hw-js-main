@@ -16,13 +16,9 @@
 */
 
 function findUniqueElements(array) {
-    const result = []
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] === array[i+1])
-            
-    } else {
-        result.push(array[i])
-    }
+
+    const set = new Set(array)
+    const result = Array.from(set)
     return result
 }
 
