@@ -15,7 +15,14 @@
 function doubleEachCharacter(str) {
     const arrayString = str.split('')
     const newStringArray = arrayString.map(element => element + element)
-return newStringArray.join().replaceAll(',', '')
+console.log(newStringArray.join(''));
+
+return newStringArray.join('')
 
 }
-doubleEachCharacter('hello')
+doubleEachCharacter('abc')
+doubleEachCharacter('123')
+doubleEachCharacter(' ')
+doubleEachCharacter('')
+doubleEachCharacter('!@#')
+
