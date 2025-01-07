@@ -22,10 +22,8 @@
 
 // console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 
-const int = [2, '12', 3, 33, '5', '17', 20, 56, '43']
-
 const filter = (int, (element, i) => {
-  if (typeof(element[i]) === 'number') {
+  if (element[i] % 2 === 1) {
     return element[i]
   }
 })
